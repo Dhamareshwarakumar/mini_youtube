@@ -1,0 +1,30 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "Macharla Niyojakavargam",
+      "link": "https://www.youtube.com/watch?v=AHUVtYAKnYY",
+      "category": "Promo",
+      "createdAt": "2022-08-10T13:09:21.080Z",
+      "updatedAt": "2022-08-10T13:09:21.080Z"
+    },
+    {
+      "id": 2,
+      "title": "Whistle Video Song | The Warriorr",
+      "link": "https://www.youtube.com/watch?v=yaaPIjtZfTs",
+      "category": "Music",
+      "createdAt": "2022-08-10T13:11:21.080Z",
+      "updatedAt": "2022-08-10T13:11:21.080Z"
+    }
+  ],
+  "history": [
+    {
+      "id": 1,
+      "video": 2
+    },
+    {
+      "id": 2,
+      "video": 1
+    }
+  ]
+}

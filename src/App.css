@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Open+Sans:wght@500;600&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-fluid {
+	padding: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+	min-height: 100vh;
+	background-color: #181818;
+	overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home__videos {
+	overflow-y: scroll;
+	height: calc(100vh - 46px);
 }
 
-.App-link {
-  color: #61dafb;
+.home__videos::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: #000; /* or add it to the track */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home__videos::-webkit-scrollbar-thumb {
+	background: #aaa;
+	border-radius: 10px;
+}
+
+.bucket-bar {
+	background-color: #202020;
+	border-top: 1px solid #373737;
+	border-bottom: 1px solid #373737;
+	padding: 7px 0;
+}
+
+.pill {
+	background-color: #373737;
+	padding: 2px 15px;
+	border: 1px solid #4d4d4d;
+	border-radius: 50px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.pill:hover {
+	background-color: #4C4C4C;
+}
+
+.sidebar {
+	min-width: 222px;
+	width: 100%;
+	background-color: #202020;
+	min-height: 100vh;
+	/* padding: 0 15px; */
+}
+
+.sidebar-item {
+	display: flex;
+	align-items: start;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+.sidebar-item:hover {
+	background-color: #4C4C4C;
+}
+
+.sidebar-item i {
+	font-size: x-large;
+}
+
+.sidebar-item p {
+	padding-left: 15px;
+	font-size: large;
+	padding-top: 6px;
+	margin-bottom: 8px;
+}
+
+.logo {
+	font-size: xx-large;
+	font-family: 'Mouse Memoirs', sans-serif;
+	text-align: center;
+}
+
+.floating-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background-color: #DC3545;
+	color: #fff;
+	border-radius: 50%;
+	padding: 10px;
+	cursor: pointer;
+	font-size: xx-large;
+	z-index: 1;
+	border: 1px solid #aaa;
+}
+
+.floating-button i {
+	position: relative;
+	top: -15px;
+	left: -6px;
 }
